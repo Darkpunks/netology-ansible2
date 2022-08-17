@@ -1,40 +1,40 @@
 # netology-ansible2
-
-# 8.2 описание Playbook
-
+_______________________________________________________________________________
+# 8.2 РѕРїРёСЃР°РЅРёРµ Playbook
+______________________________________________________________________________
 ## GROUP VARS
-java_oracle_jdk_package - пакет установки Java
-kibana_package - пакет установки kibana
-elasticsearch_package - пакет установки elasticsearch
+ - java_oracle_jdk_package - РїР°РєРµС‚ СѓСЃС‚Р°РЅРѕРІРєРё Java
+ - kibana_package - РїР°РєРµС‚ СѓСЃС‚Р°РЅРѕРІРєРё kibana
+ - elasticsearch_package - РїР°РєРµС‚ СѓСЃС‚Р°РЅРѕРІРєРё elasticsearch
 
-java_home - домашний каталог java
-elastic_home - домашний каталог Elasticsearch
-kibana_home - домашний каталог Kibana
+ - java_home - РґРѕРјР°С€РЅРёР№ РєР°С‚Р°Р»РѕРі java
+ - elastic_home - РґРѕРјР°С€РЅРёР№ РєР°С‚Р°Р»РѕРі Elasticsearch
+ - kibana_home - РґРѕРјР°С€РЅРёР№ РєР°С‚Р°Р»РѕРі Kibana
 
-java_jdk_version - версия Java
-elastic_version - версия Elasticsearch
-kibana_version - версия Kibana
+ - java_jdk_version - РІРµСЂСЃРёСЏ Java
+ - elastic_version - РІРµСЂСЃРёСЏ Elasticsearch
+ - kibana_version - РІРµСЂСЃРёСЏ Kibana
 
-## Описание Play 
+## РћРїРёСЃР°РЅРёРµ Play 
 
 ### Install Java
- установлены тэги *java* 
- - установка переменной java_home
- - копирование установочного пакета
- - создние каталога java_home
- - распаковка пакета jdk в java_home
- - создание jdk.sh по шаблону jdk.sh.j2 
+ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ С‚СЌРіРё *java* 
+ - СѓСЃС‚Р°РЅРѕРІРєР° РїРµСЂРµРјРµРЅРЅРѕР№ java_home
+ - РєРѕРїРёСЂРѕРІР°РЅРёРµ СѓСЃС‚Р°РЅРѕРІРѕС‡РЅРѕРіРѕ РїР°РєРµС‚Р°
+ - СЃРѕР·РґРЅРёРµ РєР°С‚Р°Р»РѕРіР° java_home
+ - СЂР°СЃРїР°РєРѕРІРєР° РїР°РєРµС‚Р° jdk РІ java_home
+ - СЃРѕР·РґР°РЅРёРµ jdk.sh РїРѕ С€Р°Р±Р»РѕРЅСѓ jdk.sh.j2 
 
 ### Install Elastic
- установлены тэги *elastic*  
- - копирование установочного пакета
- - создние каталога elastic_home
- - распаковка пакета elasticsearch в elastic_home
- - создание elk.sh по шаблону elk.sh.j2 
+ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ С‚СЌРіРё *elastic*  
+ - РєРѕРїРёСЂРѕРІР°РЅРёРµ СѓСЃС‚Р°РЅРѕРІРѕС‡РЅРѕРіРѕ РїР°РєРµС‚Р°
+ - СЃРѕР·РґРЅРёРµ РєР°С‚Р°Р»РѕРіР° elastic_home
+ - СЂР°СЃРїР°РєРѕРІРєР° РїР°РєРµС‚Р° elasticsearch РІ elastic_home
+ - СЃРѕР·РґР°РЅРёРµ elk.sh РїРѕ С€Р°Р±Р»РѕРЅСѓ elk.sh.j2 
 
 ### install Kibana
- установлены тэги *kibana*  
- - копирование установочного пакета
- - создние каталога kibana_home
- - распаковка пакета kibana в kibana_home
- - создание kib.sh по шаблону kib.sh.j2 
+ СѓСЃС‚Р°РЅРѕРІР»РµРЅС‹ С‚СЌРіРё *kibana*  
+ - РєРѕРїРёСЂРѕРІР°РЅРёРµ СѓСЃС‚Р°РЅРѕРІРѕС‡РЅРѕРіРѕ РїР°РєРµС‚Р°
+ - СЃРѕР·РґРЅРёРµ РєР°С‚Р°Р»РѕРіР° kibana_home
+ - СЂР°СЃРїР°РєРѕРІРєР° РїР°РєРµС‚Р° kibana РІ kibana_home
+ - СЃРѕР·РґР°РЅРёРµ kib.sh РїРѕ С€Р°Р±Р»РѕРЅСѓ kib.sh.j2 
