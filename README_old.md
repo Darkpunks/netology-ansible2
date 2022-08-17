@@ -6,7 +6,7 @@ ______________________________________________________________________________
 
 0. Сделали первый play 
 
-<img width="700" alt="2" src="">
+<img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.0.jpg">
 
 ```
 
@@ -58,7 +58,7 @@ elasticsearch              : ok=11   changed=8    unreachable=0    failed=0    s
 
 
 1. Приготовьте свой собственный inventory файл prod.yml.
-
+```
  ---
       elasticsearch:
         hosts:
@@ -68,10 +68,15 @@ elasticsearch              : ok=11   changed=8    unreachable=0    failed=0    s
         hosts:
           kibana:
             ansible_connection: docker
-
+ ```     
+ 
+ <img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.1.jpg">
+            
 2. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает kibana.
 
 Так как запускаем в докере, где по умолчанию действия производятся под root, убрал become 
+
+<img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.2.jpg">
 
 3. При создании tasks рекомендую использовать модули: get_url, template, unarchive, file.
 
@@ -150,6 +155,10 @@ PLAY RECAP *********************************************************************
 elasticsearch              : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0
 
 ```
+
+
+<img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.6.jpg">
+
 Запустил в обычном режиме, playbook создал все необходимые папки и теперь  
 запуск происходит без ошибок:
 ```
@@ -300,6 +309,8 @@ PLAY RECAP *********************************************************************
 elasticsearch              : ok=9    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
 kibana                     : ok=9    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0
 ```
+
+<img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.8.jpg">
 
 9. Подготовьте README.md файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 
