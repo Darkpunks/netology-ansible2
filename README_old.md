@@ -6,7 +6,7 @@ ______________________________________________________________________________
 
 0. Сделали первый play 
 
-<img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.0.jpg">
+
 
 ```
 
@@ -55,7 +55,7 @@ elasticsearch              : ok=11   changed=8    unreachable=0    failed=0    s
 
 ```
 
-
+<img width="700" alt="2" src="https://github.com/Darkpunks/netology-ansible2/blob/main/8.2%20image/8.2.0.jpg">
 
 1. Приготовьте свой собственный inventory файл prod.yml.
 ```
